@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "FCVersionController.h"
 
 /**
  *  版本信息

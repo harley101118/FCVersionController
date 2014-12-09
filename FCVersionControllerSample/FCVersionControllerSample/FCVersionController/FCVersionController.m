@@ -145,23 +145,33 @@
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
     
         if (connectionError || data == nil) {
-            finished(nil);
+            [self callbackWithVersion:nil];
             return;
         }
+        
+        // 标记为搜索结束状态
+        self.isSearchingForUpdate = NO;
         
         NSDictionary *jsonData = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
         FCVersionInfo *version = [[FCVersionInfo alloc] initWihtResponseDataJsonData:jsonData
                                                                    searchingLocation:_searchingLocation];
-
-        if (finished) {
-            if (version == nil || [version sameAs:_currentVersion]) {
-                finished(nil);
-            }else {
-                self.latestNewVersion = version;
-                finished(version);
-            }
+        
+        if (version == nil || [version sameAs:_currentVersion]) {
+            [self callbackWithVersion:nil];
+        }else {
+            self.latestNewVersion = version;
+            [self callbackWithVersion:version];
         }
     }];
+}
+
+- (void)callbackWithVersion:(FCVersionInfo*)version
+{
+    for (void(^callback)(FCVersionInfo*) in _callbacks) {
+        callback(version);
+    }
+    // 回调完毕后清空缓存池
+    [_callbacks removeAllObjects];
 }
 
 - (void)installLatestVersion

@@ -7,6 +7,7 @@
 //
 
 #import "FCVersionInfo.h"
+#import "FCVersionController.h"
 
 
 @implementation FCVersionInfo
