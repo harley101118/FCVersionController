@@ -53,7 +53,7 @@
         
         if (versionInfo)
         {
-            [self showAlertForNewVersion:versionInfo];
+            [strongSelf showAlertForNewVersion:versionInfo];
         }
         else
         {
