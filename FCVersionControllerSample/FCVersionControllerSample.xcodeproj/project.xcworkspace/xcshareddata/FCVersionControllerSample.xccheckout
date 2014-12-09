@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B9060D55-0311-4186-B4FA-E00CDBFBF681</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FCVersionControllerSample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B53331CA40DB4AFC0F489D339872DEEBF1B5004C</key>
+		<string>https://github.com/harley101118/FCVersionController.git</string>
+		<key>b1258010-c6e2-2443-904c-1386b8600262++505</key>
+		<string>https://222.92.69.228/svn/FCIOS/trunk</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FCVersionControllerSample/FCVersionControllerSample.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B53331CA40DB4AFC0F489D339872DEEBF1B5004C</key>
+		<string>../../..</string>
+		<key>b1258010-c6e2-2443-904c-1386b8600262++505</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>b1258010-c6e2-2443-904c-1386b8600262++505</key>
+		<string>https://222.92.69.228/svn/FCIOS</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/harley101118/FCVersionController.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B53331CA40DB4AFC0F489D339872DEEBF1B5004C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>b1258010-c6e2-2443-904c-1386b8600262++505</string>
+			<key>IDESourceControlWCCName</key>
+			<string>..</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B53331CA40DB4AFC0F489D339872DEEBF1B5004C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FCVersionController</string>
+		</dict>
+	</array>
+</dict>
+</plist>
