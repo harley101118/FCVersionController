@@ -178,6 +178,11 @@
 {
     NSAssert(_AppID.length > 0, @"FCVersionController:未设置AppID，请设置AppID后再更新应用!");
 
+    // 没有新版本时直接返回
+    if (!self.latestNewVersion) {
+        return;
+    }
+    
     // 拼接更新地址
     NSString *updateUrl;
     switch (_searchingLocation) {
